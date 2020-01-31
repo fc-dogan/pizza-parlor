@@ -36,6 +36,8 @@ $(document).ready(function() {
     var userName =$("#user-name").val();
     var userAddress = $("#user-address").val();
     $("#name").text(userName);
+    $("#welcome-screen").hide();
+    $("#order-screen").show();
 
   });
 
@@ -48,8 +50,10 @@ $(document).ready(function() {
     $("input:checkbox[name=pizza-toppings]:checked").each(function() {
       var inputtedToppings = $(this).val();
       pizza.addTopping(inputtedToppings);
-    })
-
+    });
+    
+    $("#order-screen").hide();
+    $("#final-screen").show();
     
     console.log(pizza);
   });
