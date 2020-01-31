@@ -15,14 +15,14 @@
       <p>Welcome to Pizza Parlor</p>
       <h3>Start your order</h3>
       <form id="user-info">
-        <label for="order-name">Name:</label><br>
-        <input type="text" id="order-name"><br>
-        <label for="order-address">Address:</label><br>
-        <input type="text" id="order-address"><br>
+        <label for="user-name">Name:</label><br>
+        <input type="text" id="user-name"><br>
+        <label for="user-address">Address:</label><br>
+        <input type="text" id="user-address"><br>
         <button id="create-button" type="submit" class="btn btn-danger" >Create your own pizza now</button>
       </form>
     </div>
-    
+    <!-- Order screen -->
     <div class="box" id="order-screen">
       <h3>Create your own pizza:</h3>
       <form id="order-form">
@@ -50,7 +50,8 @@
     </div>
 
     <div class="box" id="final-screen">
-
+      <p>Thanks for your order, <span id="name"></span></p>
+      
     </div>
   </div> 
 </body>

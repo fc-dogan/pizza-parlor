@@ -3,6 +3,7 @@ function Pizza() {
   this.size = "";
   this.cost = 10
 }
+// check again for calculation
 
 Pizza.prototype.sizeCostDifference = function (size) {
   this.size = size;
@@ -30,6 +31,15 @@ var pizza = new Pizza();
 //User interface logic
 
 $(document).ready(function() {
+  $("#user-info").submit(function() {
+    event.preventDefault();
+    var userName =$("#user-name").val();
+    var userAddress = $("#user-address").val();
+    $("#name").text(userName);
+
+  });
+
+
   $("#order-form").submit(function() {
     event.preventDefault();
     var inputtedSize = $("#pizza-size").val();
