@@ -4,16 +4,6 @@ function Pizza() {
   this.cost = 10
 }
 
-Pizza.prototype.addTopping = function(topping) {
-  this.toppings.push(topping);
-   if (this.toppings.length <= 4) {
-     return this.cost
-   } else if (this.toppings.length > 4){
-     return this.cost += (this.toppings.length - 4)
-   }
- 
-}
-
 Pizza.prototype.sizeCostDifference = function (size) {
   this.size = size;
   if (this.size === "small") {
@@ -25,8 +15,19 @@ Pizza.prototype.sizeCostDifference = function (size) {
   }
 }
 
+Pizza.prototype.addTopping = function(topping) {
+  this.toppings.push(topping);
+   if (this.toppings.length <= 4) {
+     return this.cost
+   } else if (this.toppings.length > 4 && this.toppings.length < 8) {
+     return this.cost += ((this.toppings.length) - 4)
+   }
+ 
+}
+
 var pizza = new Pizza();
 
+//User interface logic
 
 $(document).ready(function() {
   $("#order-form").submit(function() {
