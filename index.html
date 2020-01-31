@@ -9,16 +9,48 @@
 </head>
 <body>
   <div class="container">
-    <div id="welcome-screen">
-      <h1>Pizza Parlor</h1>
-      <!-- image -->
+    <h1>Pizza Parlor</h1>
+    <!-- image -->
+    <div class="box" id="welcome-screen">
       <p>Welcome to Pizza Parlor</p>
       <h3>Start your order</h3>
-      <label for="order-name">Name:</label><br>
-      <input type="text" id="order-name"><br>
-      <label for="order-address">Address:</label><br>
-      <input type="text" id="order-address"><br>
-      <button id="order-button" type="submit" class="btn btn-danger" >Create your own pizza now</button>
+      <form id="user-info">
+        <label for="order-name">Name:</label><br>
+        <input type="text" id="order-name"><br>
+        <label for="order-address">Address:</label><br>
+        <input type="text" id="order-address"><br>
+        <button id="create-button" type="submit" class="btn btn-danger" >Create your own pizza now</button>
+      </form>
+    </div>
+    
+    <div class="box" id="order-screen">
+      <h3>Create your own pizza:</h3>
+      <form id="order-form">
+        <div class="form-group"> 
+          <label for="pizza-size">Choose pizza size:</label>
+          <select name="size" id="pizza-size">
+            <option value="small">Small ($8)</option>
+            <option value="medium">Medium ($10)</option>
+            <option value="large">Large ($12)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="pizza-toopings">Choose your toppings:</label>
+          <p>First 4 toppings free. Any additional toppings after 4, adds: +$1</p>
+          <input type="checkbox" name="pizza-toppings" id="toppping1">Extra Cheese <br>
+          <input type="checkbox" name="pizza-toppings" id="toppping2">Pepperoni <br>
+          <input type="checkbox" name="pizza-toppings" id="toppping3">Mushrooms <br>
+          <input type="checkbox" name="pizza-toppings" id="toppping4">Black Olives <br>
+          <input type="checkbox" name="pizza-toppings" id="toppping5">Jalapeno Peppers <br>
+          <input type="checkbox" name="pizza-toppings" id="toppping6">Artichoke Hearts <br>
+          <input type="checkbox" name="pizza-toppings" id="toppping7">Onions <br>
+        </div>
+        <button type="submit" id="order-button">Order Now</button>
+      </form>
+    </div>
+
+    <div class="box" id="final-screen">
+
     </div>
   </div> 
 </body>

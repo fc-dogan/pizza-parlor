@@ -17,7 +17,7 @@ Website for a pizza company where a user can choose one or more individual toppi
 
 * User can choose individual toppings. First 4 toppings free. Any additional toppings after 4, adds: +$1
 
-  * __Input:__ mushroom, cheese, pepperoni, olives, onions
+  * __Input:__ mushroom, artichoke, pepperoni, olives, onions
   * __Output:__ pizza cost + $1
 
 

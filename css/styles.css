@@ -1,0 +1,20 @@
+.box {
+  margin: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+  background-color: rgb(238, 238, 220, .4);
+  padding: 50px;
+}
+
+body {
+  text-align: center;
+}
+
+.form-group {
+  text-align: left;
+}
+
+button {
+ padding: 10px;
+ margin: 15px;
+}
