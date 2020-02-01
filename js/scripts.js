@@ -17,12 +17,6 @@ Pizza.prototype.sizeCostDifference = function (size) {
 
 Pizza.prototype.addTopping = function(topping) {
   this.toppings.push(topping);
-  //  if (this.toppings.length <= 4) {
-  //    return this.cost
-  //  } else if (this.toppings.length > 4){
-  //    var extraToppings = this.toppings.length - 4
-  //    return this.cost += (extraToppings)
-  //  }
 }
 
 Pizza.prototype.costToppings = function () {
@@ -34,7 +28,6 @@ Pizza.prototype.costToppings = function () {
     }
   }
 }
-
 
 Pizza.prototype.displayOrderDetails =function() {
   return  this.size + " size, with " + this.toppings.length + " toppings pizza total: $" + this.cost;
@@ -54,7 +47,6 @@ $(document).ready(function() {
     $("#order-screen").show();
   });
 
-
   $("#order-form").submit(function() {
     event.preventDefault();
     var inputtedSize = $("#pizza-size").val();
@@ -71,10 +63,7 @@ $(document).ready(function() {
     $("#order-screen").hide();
     $("#final-screen").show();
     
-    
-    console.log(pizza);
-   
-    
+    console.log(pizza);  
   });
 
 });
