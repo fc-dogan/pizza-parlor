@@ -26,9 +26,13 @@ Pizza.prototype.addTopping = function(topping) {
  
 }
 
-var pizza = new Pizza();
+Pizza.prototype.displayOrderDetails =function() {
+  return  this.size + " size, with " + this.toppings.length + " toppings pizza total: $" + this.cost;
+}
 
 //User interface logic
+
+var pizza = new Pizza();
 
 $(document).ready(function() {
   $("#user-info").submit(function() {
@@ -38,7 +42,6 @@ $(document).ready(function() {
     $("#name").text(userName);
     $("#welcome-screen").hide();
     $("#order-screen").show();
-
   });
 
 
@@ -51,9 +54,12 @@ $(document).ready(function() {
       var inputtedToppings = $(this).val();
       pizza.addTopping(inputtedToppings);
     });
-    
+
+    var totalCost = pizza.displayOrderDetails();
+    $("#order-details").text(totalCost);
     $("#order-screen").hide();
     $("#final-screen").show();
+    
     
     console.log(pizza);
   });
