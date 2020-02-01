@@ -28,11 +28,11 @@ Website for a pizza company where a user can choose one or more individual toppi
 
 * Open a simple HTTP server in the top level of cloned directory. 
 
-* or open in github page [here]()
+* or open in github page [here](https://fc-dogan.github.io/pizza-parlor/)
 
 For a mac, run the following command in your terminal:
 
-* $ git clone https://github.com/fc-dogan/Beep-Boop.git
+* $ git clone https://github.com/fc-dogan/pizza-parlor.git
 
 * Then open your web browser of choice
 
