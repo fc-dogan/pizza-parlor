@@ -56,7 +56,7 @@ $(document).ready(function() {
     });
 
     var totalCost = pizza.displayOrderDetails();
-    $("#order-details").text(totalCost);
+    $(".order-details").text(totalCost);
     $("#order-screen").hide();
     $("#final-screen").show();
     
