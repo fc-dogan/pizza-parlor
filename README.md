@@ -10,7 +10,7 @@ Website for a pizza company where a user can choose one or more individual toppi
 
 ## Specifications
 
-* The program calculate pizza's cost depents on pizza size
+* The program calculate pizza's cost based on pizza size
 
   * __Input:__ medium
   * __Output:__ $10
