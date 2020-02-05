@@ -7,11 +7,11 @@ function Pizza() {
 Pizza.prototype.sizeCostDifference = function (size) {
   this.size = size;
   if (this.size === "small") {
-    return this.cost -=2
+      this.cost -=2
   } else if (this.size === "medium") {
-    return this.cost 
+     this.cost 
   } else if (this.size === "large"){
-    return this.cost +=2
+     this.cost +=2
   }
 }
 
@@ -21,10 +21,10 @@ Pizza.prototype.addTopping = function(topping) {
 
 Pizza.prototype.costToppings = function () {
   if (this.toppings.length <= 4) {
-    return this.cost
+     this.cost
   } else if (this.toppings.length > 4){
     for (var i = 4; i<this.toppings.length; i++){
-     return this.cost += 1
+      this.cost += 1
     }
   }
 }
@@ -55,8 +55,8 @@ $(document).ready(function() {
     $("input:checkbox[name=pizza-toppings]:checked").each(function() {
       var inputtedToppings = $(this).val();
       pizza.addTopping(inputtedToppings);
-      pizza.costToppings(this.toppings);
     });
+     pizza.costToppings();
 
     var totalCost = pizza.displayOrderDetails();
     $(".order-details").text(totalCost);
